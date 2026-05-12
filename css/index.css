@@ -1,51 +1,85 @@
 body {
-  background-color: #f4f1ea;
-  color: #222;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: Consolas, "Courier New", monospace;
   margin: 0;
-  padding: 0;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
+/* Fake editor-style navigation bar */
 nav {
-  background-color: #222;
-  padding: 16px;
+  background-color: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  padding: 12px 16px;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 nav a {
-  color: white;
+  color: #cccccc;
   text-decoration: none;
-  margin: 0 12px;
+  margin: 0 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
   font-weight: bold;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background-color: #37373d;
+  color: #ffffff;
 }
 
-section {
-  background-color: white;
-  margin: 24px auto;
+/* Name/header area */
+.nameplate {
+  max-width: 900px;
+  margin: 32px auto 24px auto;
   padding: 24px;
-  max-width: 800px;
-  border-radius: 12px;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-left: 6px solid #007acc;
+}
+
+.file-label {
+  color: #6a9955;
+  margin: 0;
+  font-size: 14px;
 }
 
 h1 {
-  color: #7a1f1f;
-  text-align: center;
-  font-size: 48px;
-  margin-top: 32px;
+  color: #569cd6;
+  font-size: 44px;
+  margin: 8px 0;
+}
+
+.tagline {
+  color: #ce9178;
+  margin-bottom: 0;
+}
+
+/* Main content sections */
+section {
+  background-color: #252526;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 24px;
+  border: 1px solid #3c3c3c;
+  border-left: 6px solid #c586c0;
 }
 
 h2 {
-  color: #333;
+  color: #c586c0;
   font-size: 28px;
-  border-bottom: 2px solid #ddd;
+  margin-top: 0;
+  border-bottom: 1px solid #3c3c3c;
   padding-bottom: 8px;
 }
 
+p {
+  color: #d4d4d4;
+}
+
+/* Experience blocks */
 #experience ul {
   display: flex;
   flex-wrap: wrap;
@@ -55,15 +89,18 @@ h2 {
 
 #experience li {
   list-style: none;
-  background-color: #e8e8e8;
+  background-color: #2d2d30;
+  border: 1px solid #3c3c3c;
+  border-left: 4px solid #569cd6;
   padding: 14px;
-  border-radius: 8px;
   flex: 1 1 220px;
 }
 
+/* Connect links */
 #connect ul {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
   padding-left: 0;
 }
 
@@ -72,13 +109,20 @@ h2 {
 }
 
 #connect a {
-  background-color: #222;
+  background-color: #007acc;
   color: white;
-  padding: 10px 16px;
-  border-radius: 8px;
   text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 #connect a:hover {
-  background-color: #555;
+  background-color: #005f99;
+}
+
+/* Optional: make empty sections still look intentional */
+#skills,
+#projects {
+  min-height: 80px;
 }
