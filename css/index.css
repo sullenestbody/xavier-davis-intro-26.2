@@ -6,7 +6,7 @@ body {
   line-height: 1.6;
 }
 
-/* Fake editor-style navigation bar */
+
 nav {
   background-color: #252526;
   border-bottom: 1px solid #3c3c3c;
@@ -56,7 +56,7 @@ h1 {
   margin-bottom: 0;
 }
 
-/* Main content sections */
+
 section {
   background-color: #252526;
   max-width: 900px;
@@ -78,7 +78,7 @@ p {
   color: #d4d4d4;
 }
 
-/* Experience blocks */
+
 #experience ul {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +95,7 @@ p {
   flex: 1 1 220px;
 }
 
-/* Connect links */
+
 #connect ul {
   display: flex;
   flex-wrap: wrap;
@@ -120,8 +120,20 @@ p {
   background-color: #005f99;
 }
 
-/* Optional: make empty sections still look intentional */
-#skills,
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+#skills li {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
 #projects {
   min-height: 80px;
 }
