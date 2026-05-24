@@ -1,7 +1,6 @@
 const body = document.querySelector("body");
 
-const footer = document.createElement("footer");
-body.appendChild(footer);
+const footer = document.querySelector("footer");
 
 const today = new Date();
 const thisYear = today.getFullYear();
