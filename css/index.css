@@ -1,0 +1,139 @@
+body {
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  font-family: Consolas, "Courier New", monospace;
+  margin: 0;
+  line-height: 1.6;
+}
+
+
+nav {
+  background-color: #252526;
+  border-bottom: 1px solid #3c3c3c;
+  padding: 12px 16px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #cccccc;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #37373d;
+  color: #ffffff;
+}
+
+.nameplate {
+  max-width: 900px;
+  margin: 32px auto 24px auto;
+  padding: 24px;
+  background-color: #252526;
+  border: 1px solid #3c3c3c;
+  border-left: 6px solid #007acc;
+}
+
+.file-label {
+  color: #6a9955;
+  margin: 0;
+  font-size: 14px;
+}
+
+h1 {
+  color: #569cd6;
+  font-size: 44px;
+  margin: 8px 0;
+}
+
+.tagline {
+  color: #ce9178;
+  margin-bottom: 0;
+}
+
+
+section {
+  background-color: #252526;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 24px;
+  border: 1px solid #3c3c3c;
+  border-left: 6px solid #c586c0;
+}
+
+h2 {
+  color: #c586c0;
+  font-size: 28px;
+  margin-top: 0;
+  border-bottom: 1px solid #3c3c3c;
+  padding-bottom: 8px;
+}
+
+p {
+  color: #d4d4d4;
+}
+
+
+#experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+}
+
+#experience li {
+  list-style: none;
+  background-color: #2d2d30;
+  border: 1px solid #3c3c3c;
+  border-left: 4px solid #569cd6;
+  padding: 14px;
+  flex: 1 1 220px;
+}
+
+
+#connect ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-left: 0;
+}
+
+#connect li {
+  list-style: none;
+}
+
+#connect a {
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#connect a:hover {
+  background-color: #005f99;
+}
+
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+#skills li {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+#projects {
+  min-height: 80px;
+}
