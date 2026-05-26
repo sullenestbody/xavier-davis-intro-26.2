@@ -1,0 +1,81 @@
+#leave-message,
+#messages {
+  margin: 32px auto;
+  padding: 24px;
+  max-width: 700px;
+  border: 2px solid #d6d4d4;
+  border-radius: 10px;
+  background-color: #f7f3ee;
+}
+
+#leave-message form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#leave-message label {
+  font-weight: bold;
+}
+
+#leave-message input,
+#leave-message textarea {
+  padding: 10px;
+  border: 1px solid #b8b3ad;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+#leave-message textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#leave-message button {
+  width: fit-content;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background-color: #252526;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#leave-message button:hover {
+  background-color: #444;
+}
+
+#messages ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+#messages li {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #b8b3ad;
+  border-radius: 6px;
+  background-color: white;
+}
+
+#messages button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #leave-message,
+  #messages {
+    margin: 20px 12px;
+    padding: 16px;
+  }
+
+  #leave-message button {
+    width: 100%;
+  }
+}
