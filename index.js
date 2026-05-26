@@ -2,7 +2,7 @@ let today = new Date();
 let thisYear = today.getFullYear();
 let footer = document.querySelector("footer");
 let copyright = document.createElement("p");
-copyright.innerHTML = `&copy; ${thisYear} Maria Santos`;
+copyright.innerHTML = `© ${thisYear} Xavier Davis`;
 footer.appendChild(copyright);
 
 let skills = ["JavaScript", "HTML", "CSS", "GitHub", "Skills"];
@@ -15,9 +15,11 @@ for (let i = 0; i < skills.length; i++) {
 
 let button = document.querySelector("#myButton");
 
-button.addEventListener("click", function() {
+if (button) {
+  button.addEventListener("click", function() {
     alert("Button clicked!");
-});
+  });
+}
 
 let heading = document.querySelector("h1");
 
