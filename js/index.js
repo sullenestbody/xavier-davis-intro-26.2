@@ -58,3 +58,36 @@ for (let i = 0; i < skills.length; i++) {
   skill.textContent = skills[i];
   skillsList.appendChild(skill);
 }
+fetch("https://api.github.com/users/sullenestbody/repos")
+  .then(function (response) {
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+
+    return response.json();
+  })
+  .then(function (data) {
+    const repositories = data;
+
+    console.log(repositories);
+
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
+  })
+  .catch(function (error) {
+    const projectSection = document.getElementById("projects");
+    const projectList = projectSection.querySelector("ul");
+
+    const errorMessage = document.createElement("li");
+    errorMessage.innerText = "Sorry, projects could not be loaded right now.";
+
+    projectList.appendChild(errorMessage);
+
+    console.error("An error occurred:", error);
+  });
