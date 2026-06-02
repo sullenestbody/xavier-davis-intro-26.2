@@ -68,6 +68,21 @@
   cursor: pointer;
 }
 
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+#projects li {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+}
+
 @media (max-width: 600px) {
   #leave-message,
   #messages {
@@ -217,3 +232,4 @@ p {
 #projects {
   min-height: 80px;
 }
+
