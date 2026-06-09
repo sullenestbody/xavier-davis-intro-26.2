@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open API Weather Page</title>
+  <link rel="stylesheet" href="css/openapi.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="openapi.html">Open API</a></li>
+      </ul>
+    </nav>
+
+    <h1>Richmond Weather</h1>
+    <p>
+      This page uses the Open-Meteo API to show current weather and a short forecast.
+    </p>
+  </header>
+
+  <main>
+    <section class="weather-card">
+      <h2>Current Weather</h2>
+      <p id="current-weather">Loading current weather...</p>
+    </section>
+
+    <section class="weather-card">
+      <h2>3-Day Forecast</h2>
+      <div id="forecast">Loading forecast...</div>
+    </section>
+
+    <section class="weather-card">
+      <h2>About This API</h2>
+      <p>
+        I chose Open-Meteo because it provides public weather data without needing an API key.
+      </p>
+    </section>
+  </main>
+
+  <script src="js/openapi.js"></script>
+</body>
+</html>
