@@ -16,6 +16,7 @@
 
 #leave-message label {
   font-weight: bold;
+  color:#222;
 }
 
 #leave-message input,
@@ -81,6 +82,7 @@
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #f8f8f8;
+  color:#222;
 }
 
 @media (max-width: 600px) {
